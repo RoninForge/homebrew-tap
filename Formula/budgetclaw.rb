@@ -5,21 +5,21 @@
 class Budgetclaw < Formula
   desc "Local spend monitor for Claude Code"
   homepage "https://roninforge.org/budgetclaw"
-  version "1.7.1"
+  version "1.7.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RoninForge/budgetclaw/releases/download/v1.7.1/budgetclaw_1.7.1_darwin_amd64.tar.gz"
-      sha256 "4668e243cde990bc380a5ff20de8bacf1aa62f761092f775fe1f8b242b1f6fcc"
+      url "https://github.com/RoninForge/budgetclaw/releases/download/v1.7.2/budgetclaw_1.7.2_darwin_amd64.tar.gz"
+      sha256 "8bd6cb928cc1adab06a66e87c444d1b3ea2042b4fce05fcaa9093a9e7e3424c0"
 
       define_method(:install) do
         bin.install "budgetclaw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RoninForge/budgetclaw/releases/download/v1.7.1/budgetclaw_1.7.1_darwin_arm64.tar.gz"
-      sha256 "52752d7498e13190ce3459f103f339780927985ed34287e9a4f6633d3463f795"
+      url "https://github.com/RoninForge/budgetclaw/releases/download/v1.7.2/budgetclaw_1.7.2_darwin_arm64.tar.gz"
+      sha256 "a56f7402afc526e75052e5178a473799a98cf17b6de32b8c546c031906f7a50e"
 
       define_method(:install) do
         bin.install "budgetclaw"
@@ -29,15 +29,15 @@ class Budgetclaw < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RoninForge/budgetclaw/releases/download/v1.7.1/budgetclaw_1.7.1_linux_amd64.tar.gz"
-      sha256 "34bac198cc3f7719376b851651e7c61d9f6c767d55c0d15a49acd8c1ef244d9b"
+      url "https://github.com/RoninForge/budgetclaw/releases/download/v1.7.2/budgetclaw_1.7.2_linux_amd64.tar.gz"
+      sha256 "5c0ac65d33b6978fcfc26bcf7de55b7f41ecd48ee141f688bbcb81ff9a4c6ec5"
       define_method(:install) do
         bin.install "budgetclaw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RoninForge/budgetclaw/releases/download/v1.7.1/budgetclaw_1.7.1_linux_arm64.tar.gz"
-      sha256 "510c84a92c56bb17308b44875e619f5a4f8f0c1f422c2d0eedd0622e43f83fd3"
+      url "https://github.com/RoninForge/budgetclaw/releases/download/v1.7.2/budgetclaw_1.7.2_linux_arm64.tar.gz"
+      sha256 "41fb1f768e45041314edf6fc8539f57bb7d7afc0fbe8bffde5b22b1a864d8a1e"
       define_method(:install) do
         bin.install "budgetclaw"
       end
